@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  padding: 0.4rem;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid black;
+  height: 100vh;
+  background-color: rgb(159, 114, 116);
+  border-radius: 4px;
+  overflow-y: auto;}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 1rem;
+}
+nav h2 {
+  font-weight: 900;
+}
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: rgb(168, 168, 168);
+  font-weight: 400;
+}
+nav a.active {
+  text-decoration: dashed;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 0.7;
+  min-height: 350px;
+  color: #fff;
+  background-image: url("../assets/images/home-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: start;
+  position: relative;
+}
+.homepage h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+.homepage p {
+  margin-bottom: 2rem;
+}
+.homepage .link-button {
+  display: block;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  background-color: rgb(255, 165, 0);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  right: 1rem;
+}
+footer {
+  display: block;
+  background-color: rgb(49, 46, 46);
+  padding: 1.2rem 0;
+  text-align: center;
+  color: grey;
+  position:absolute;
+  bottom: 0;
+  top:100%;
+  left:0;
+  right:0;
+  margin-top: 2rem;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about .container {
+  margin: 1.5rem 1rem;
+}
+.about h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.about p {
+  margin-top: 1rem;
+}
+.about .explore {
+  background-color: grey;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  border-radius: 0.3rem;
+}
+.about .explore p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+.about .explore .link-button {
+  display: inline-block;
+  padding: 0.3rem;
+  margin-top: 0.8rem;
+  background-color: black;
+  color: rgb(203, 197, 197);
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
